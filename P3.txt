@@ -1,0 +1,14 @@
+AUIPC x1,0
+LW x2,0(x1)
+LW x3,4(x1)
+XOR x4,x2,x3
+OR x5,x2,x3
+AND x6,x2,x3
+SLLI x7,x3,2
+SRLI x8,x3,2
+SW x4,8(x1)
+SW x5,12(x1)
+SW x6,16(x1)
+SW x7,20(x1)
+SW x8,24(x1)
+EBREAK

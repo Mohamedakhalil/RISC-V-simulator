@@ -1,0 +1,10 @@
+AUIPC x1,0
+LW x2,10(x1)
+LW x3,14(x1)
+ADDI x10,x0,0
+ADD x10,x10,x2
+ADDI x2,x2,1
+BNE x2,x3,-8
+SW x2,10(x1)
+SW x3,14(x1)
+FENCE
